@@ -1,0 +1,199 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: white;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+    display: inline;
+}
+.nav-links {
+/*upper links with pictures*/
+    width: 100%;
+    position: relative;
+    float: right;
+    text-align: right;
+    padding: 0px;
+    margin: 0 5px;
+    right: 70px;
+}
+nav li {
+    margin: 0 6px;
+}
+nav li a{
+    color: #1b1b1b;
+}
+#waffle {
+    position:relative;
+    transform: scale(0.9);
+    top: 5px;
+}
+#bell {
+    position: absolute;
+}
+#g-icon {
+    position: absolute;
+    right: -72px;
+    top: 3px;
+    transform: scale(0.8);
+}
+.google-logo {
+/*logo*/
+    height: 92px;
+    width: 272px;
+    margin: auto;
+}
+img[alt="Google"] {
+    position: relative;
+    top: 150px;
+}
+img[alt="Google"]:hover{
+    animation-name: hop;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+}
+@keyframes hop {
+    0% {
+        top:150px;
+    } 20% {
+        transform: skewY(30deg);
+        box-shadow: 10px 2px 6px 1px lightgrey;
+    } 50% {
+        transform: skewY(0deg);
+        top: 0px;
+        box-shadow: 100px 60px 60px 9px lightgrey;
+    } 90% {
+        top:150px;
+        transform: skewY(-10deg);
+        box-shadow: 10px 2px 6px 1px lightgrey;
+    } 100% {
+        transform: skewY(0deg);
+        box-shadow: none;
+    }
+}
+.search-box {
+    position: relative;
+    height: 120px;
+    width: 550px;
+    margin: auto;
+    top: 220px;
+}
+input[type=text] {
+/*search box text field*/
+    position: relative;
+    font-size: 16px; 
+    width: 480px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    left: 35px;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    box-shadow: 0px 2px 10px .2px #c4c4c4;
+    word-wrap: break-word;
+    text-indent: 20px;
+}
+input[type=text]:hover, input[type=text]:focus {
+    box-shadow: 0px 3.5px 15px .4px #c4c4c4;
+    outline: none;
+}
+input[type=submit] {
+/*sök på google and jag har tur -buttons*/
+    position: relative;
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: 13px;
+    height: 36px;
+    line-height: 27px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #757575;
+    left: 150px;
+    top: 20px;
+}
+input[type=submit]:hover {
+    color: rgb(32, 32, 32);
+    border-color: #bbbbbb;
+}
+input[type=submit]:focus {
+    color: rgb(32, 32, 32);
+    border-color: #38429e;
+}
+#keyboard-icon {
+    position: absolute;
+    left: 78%;
+    bottom: 92px;
+}
+#microphone-icon {
+    position: absolute;
+    transform: scale(0.5);
+    left: 83%;
+    bottom: 73px;
+}
+.language {
+/*link to google in finnish*/
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 200px;
+    margin: auto;
+    top: 240px;
+    text-align: center;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+
+}
+footer #heading {
+/*footer text element with text Finland*/
+    padding: 0 30px;
+    font-size: 15px;
+    color: #8a8a8a;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #dbdbdb;
+    padding: 0;
+}
+footer #content {
+/*footer bottom content*/
+    margin: 0 0 10px 0;
+    padding: 0 0 35px 0;
+    text-indent: 0;
+}
+footer #content a {
+    color: #8a8a8a;
+}
+footer #content li {
+    margin: 0 6px;
+}
+.footer-left {
+/*left side footer content*/
+    position: relative;
+    float: left;
+    text-align: left;
+    left: -12px;
+}
+.footer-right {
+/*right side footer content*/
+    position: relative;
+    float: right;
+    left: -30px;
+}
